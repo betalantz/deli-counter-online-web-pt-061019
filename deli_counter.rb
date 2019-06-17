@@ -14,3 +14,12 @@ def take_a_number(deli_line, new_customer)
   deli_line << new_customer
   puts "Welcome, #{new_customer}. You are number #{deli_line.size} in line."
 end
+
+def now_serving(deli_line)
+  if deli_line.size == 0
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Currently serving #{deli_line[0]}."
+    deli_line.unshift
+  end
+end
