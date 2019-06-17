@@ -7,4 +7,5 @@ def line(deli_line)
     output << ":"
     deli_line.each_with_index{|customer, index| output << " #{index + 1}. #{customer}"}
     return output
+  end
 end
