@@ -9,3 +9,8 @@ def line(deli_line)
     puts output
   end
 end
+
+def take_a_number(deli_line, new_customer)
+  deli_line << new_customer
+  puts "Welcome, #{new_customer}. You are number #{deli_line.size} in line."
+end
